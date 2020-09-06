@@ -16,7 +16,6 @@ public class Windows {
         }
         int endPoint = windLen - 1;
         int startPoint = 0;
-        int distance;
         while (endPoint < length) {
             while (startPoint <= endPoint) {
                 if (numbers[startPoint] % 2 != 0) {
@@ -33,6 +32,7 @@ public class Windows {
             if (endPoint - startPoint > windLen -1) startPoint++;
         }
         System.out.println();
+        sc.close();
     }
 
     public static void main(String args[]) {
